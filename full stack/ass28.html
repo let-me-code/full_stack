@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<img id="image" src="on.jpeg">
+	<button onclick="onoff"> click </button>
+	<script type="text/javascript">
+		function onoff()  
+     {
+     var ima = document.getElementById('image'); 
+  
+     if (ima.src.match("on")) 
+         ima.src = "off.jpeg"; 
+     else
+         ima.src = "on.jpeg"; 
+    }
+	</script>
+
+</body>
+</html>

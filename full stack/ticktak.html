@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS</title>
+	<style type="text/css">
+	*{box-sizing: border-box;}
+		.container{
+			width: 300px;
+			margin: 50px;
+			overflow: hidden;
+		}
+		.container .box {
+			float: left;
+			width: 100px;
+			height: 100px;
+			border: 1px solid black;
+		}
+		.container .box:hover {
+			background: rgba(10,10,10,0.5);
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="container" id="main">
+		<div class="box" id="box1">1</div>
+		<div class="box" id="box2">2</div>
+		<div class="box" id="box3">3</div>
+		<div class="box" id="box4">4</div>
+		<div class="box" id="box5">5</div>
+		<div class="box" id="box6">6</div>
+		<div class="box" id="box7">7</div>
+		<div class="box" id="box8">8</div>
+		<div class="box" id="box9">9</div>
+
+	</div>
+	<button>play again</button>
+	<script type="text/javascript">
+		function selectwinner(b1,b2,b3)
+		{
+			b1.style.background="red";
+			b2.style.background="red";
+			b3.style.background="red";
+			console.log("you are the winner");
+		}
+		function winner()
+		{
+			var box1=document.getElementById('box1');
+			var box2=document.getElementById('box2');
+			var box3=document.getElementById('box3');
+			var box4=document.getElementById('box4');
+			var box5=document.getElementById('box5');
+			var box6=document.getElementById('box6');
+			var box7=document.getElementById('box7');
+			var box8=document.getElementById('box8');
+			var box9=document.getElementById('box9');
+
+			if(box1.innerHTML !== "" && box1.innerHTML ===box2.innerHTML && box1.innerHTML ===box3.innerHTML )
+			{
+				selectwinner(box1,box2,box3);
+
+			}
+			else if(box4.innerHTML !== "" && box4.innerHTML ===box5.innerHTML && box5.innerHTML ===box6.innerHTML )
+			{
+				selectwinner(box4,box5,box6);
+			} 
+			else if(box7.innerHTML !== "" && box7.innerHTML ===box8.innerHTML && box7.innerHTML ===box9.innerHTML )
+			{
+				selectwinner(box7,box8,box9);
+			}
+			
+			else if(box1.innerHTML !== "" && box1.innerHTML ===box4.innerHTML && box1.innerHTML ===box7.innerHTML )
+			{
+				selectwinner(box1,box4,box7);
+			}
+			else if(box2.innerHTML !== "" && box2.innerHTML ===box5.innerHTML && box2.innerHTML ===box8.innerHTML )
+			{
+				selectwinner(box2,box5,box8);
+			}
+			else if (box3.innerHTML !== "" && box3.innerHTML ===box6.innerHTML && box3.innerHTML ===box9.innerHTML )
+			{
+				selectwinner(box3,box6,box9);
+			}
+			else if(box1.innerHTML !== "" && box1.innerHTML ===box5.innerHTML && box1.innerHTML ===box9.innerHTML )
+			{
+				selectwinner(box1,box5,box9);
+			}
+			else if(box3.innerHTML !== "" && box3.innerHTML === box5.innerHTML && box3.innerHTML ===box7.innerHTML )
+			{
+				selectwinner(box3,box5,box7);
+			
+			}
+			};
+		
+
+		var boxes=document.querySelectorAll("#main div"), XO=0;
+
+		for(var i=0; i<boxes.length;i++)
+		{
+			boxes[i].onclick=function()
+			{
+				if(XO%2 ===0)
+				{
+					this.innerHTML="X";
+					XO+=1;
+				}
+				else
+				{
+					this.innerHTML="O";
+					XO+=1;
+				}
+				winner();
+			}
+		
+		}
+	
+		
+
+	</script>
+
+</body>
+</html>

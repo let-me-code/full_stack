@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function time(d1,d2){
+			var h1=d1.getHours();
+			var h2=d2.getHours();
+			var m1=d1.getMinutes();
+			var m2=d2.getMinutes();
+			var s1=d1.getSeconds();
+			var s2=d2.getSeconds();
+			var da1=d1.getDay();
+			var da2=d2.getDay();
+
+			if(h1<=h2)
+				var h=h2-h1;
+			else 
+				var h=h1-h2;
+			console.log('diff in hours is '+h); 
+
+			if(m1<=m2)
+				var m=m2-m1;
+			else 
+				var m=m1-m2;
+			console.log('difference in minutes is'+m); 
+
+			if(s1<=s2)
+				var s=s2-s1;
+			else 
+				var s=s1-s2;
+			console.log('difference in seconds is'+s); 
+			
+		}
+		var date1=new Date();
+		var date2=new Date();
+
+		time(date1,date2);
+
+	</script>
+
+</body>
+</html>

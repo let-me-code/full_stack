@@ -1,0 +1,263 @@
+body
+{
+	
+	background-image: url("https://img00.deviantart.net/cdeb/i/2011/091/4/7/endless_tic_tac_toe_wallpaper_by_wuflux_biscuits-d3d07m5.jpg");
+}
+#para1
+{
+	height:50px;
+	width:700px;
+}
+#header1
+{
+	background-color:lightgreen;
+	color:white;
+	font-style: bolder;
+	height:120px;
+	
+
+}
+#innermodal
+{
+	background-image: url("https://img00.deviantart.net/cdeb/i/2011/091/4/7/endless_tic_tac_toe_wallpaper_by_wuflux_biscuits-d3d07m5.jpg");
+}
+#name1
+{
+	position:relative;
+	left:45px;
+	height:50px;
+	width:450px;
+	font-size: 25px;
+	padding-left: 75px;
+	font-family:sans-serif;
+	border-radius: 20%;
+}
+#name2
+{
+	position:relative;
+	left:45px;
+	height:50px;
+	width:450px;
+	font-size: 25px;
+	padding-left: 75px;
+	font-family:sans-serif;
+	border-radius: 20%;
+}
+#footer1
+{
+	position:relative;
+	left:-200px;
+	height:50px;
+	background-color:green;
+	color:white;
+	font-size:20px;
+	font-style: bolder;
+}
+#player1
+{
+	position:relative;
+	left:120px;
+	height:50px;
+	background-color:red;
+	color:white;
+	font-size:20px; 
+}
+#player2
+{
+	position:relative;
+	left:120px;
+	height:50px;
+	background-color:red;
+	color:white;
+	font-size:20px;
+	font-style:initial;
+}
+#winner
+{
+	position:absolute;
+	left:400px;
+	padding-top:20px; 
+	padding-bottom:20px; 
+	padding-left:100px; 
+	padding-right:20px; 
+	height:70px;
+	width:600px;
+	background-color:darkgreen;
+	color:white;
+}
+#table1
+{
+	position:relative;
+	left:10px;
+	margin-top:10%;
+	border-style:solid;
+	height:400px;
+	width:500px;
+	border-collapse:collapse;
+	border-style:hidden;
+	
+}
+
+
+.column
+{
+	
+	border-style:solid;
+	width:70px;
+	height:70px;
+}
+
+
+#outer
+{
+	position:absolute;
+	top:130px;
+	left:300px;
+	height:500px;
+	width:820px;
+	background-image:white;
+	
+	
+}
+#button1
+{
+	position:absolute;
+	left:40px;
+	top:0px;
+	color:red;
+}
+#button00
+{
+	position:absolute;
+	left:40px;
+	top:0px;
+	color:greenyellow;
+}
+
+#button2
+{
+	position:absolute;
+	left:200px;
+	top:0px;
+	color:red;
+}
+#button01
+{
+	position:absolute;
+	left:200px;
+	top:0px;
+	color:greenyellow;
+}
+#button3
+{
+	position:absolute;
+	left:380px;
+	top:0px;
+	color:red;
+}
+#button02
+{
+	position:absolute;
+	left:380px;
+	top:0px;
+	color:greenyellow;
+}
+#button4
+{
+	position:absolute;
+	left:40px;
+	top:150px;
+	color:red;
+}
+#button10
+{
+	position:absolute;
+	left:40px;
+	top:150px;
+	color:greenyellow;
+}
+#button5
+{
+	position:absolute;
+	left:200px;
+	top:150px;
+	color:red;
+}
+#button11
+{
+	position:absolute;
+	left:200px;
+	top:150px;
+	color:greenyellow;
+}
+#button6
+{
+	position:absolute;
+	left:380px;
+	top:150px;
+	color:red;
+}
+#button12
+{
+	position:absolute;
+	left:380px;
+	top:150px;
+	color:greenyellow;
+}
+
+#button7
+{
+	position:absolute;
+	left:40px;
+	top:300px;
+	color:red;
+}
+#button20
+{
+	position:absolute;
+	left:40px;
+	top:300px;
+	color:greenyellow;
+}
+#button8
+{
+	position:absolute;
+	left:200px;
+	top:300px;
+	color:red;
+	
+}
+#button21
+{
+	position:absolute;
+	left:190px;
+	top:300px;
+	color:greenyellow;
+	
+}
+#button9
+{
+	position:absolute;
+	left:380px;
+	top:300px;
+	color:red;
+}
+#button22
+{
+	position:absolute;
+	left:380px;
+	top:300px;
+	color:greenyellow;
+}
+.fa
+{
+	background-color:transparent;
+	border-style:none;
+	height:80px;
+	width:80px;
+	padding:2px 2px;
+	font-size:95px;
+	display:none;
+	
+}
+

@@ -1,0 +1,44 @@
+document.getElementById("buttonw").onclick=function(){
+var i;
+document.getElementById("div1").style.backgroundColor="red";
+var a = new Array(6);
+var text="";
+text=text+"#";
+for (i = 0; i<6; i++) { 
+	a[i]=(Math.floor(Math.random()*15)+1);
+    if(a[i]==10)
+    {
+    	text=text+"A";
+    }
+    else if(a[i]==11)
+    {
+    	text=text+"B";
+    }
+    else if(a[i]==12)
+    {
+    	text=text+"C";
+    }
+    else if(a[i]==13)
+    {
+    	text=text+"D";
+    }
+    else if(a[i]==14)
+    {
+    	text=text+"E";
+    }
+    else if(a[i]==15)
+    {
+    	text=text+"F";
+    }
+    else
+    {
+    	text=text+a[i];
+    }
+
+}
+
+document.getElementById("para").innerHTML=text;
+document.getElementById("div1").style.backgroundColor=text;
+
+}
+

@@ -1,0 +1,32 @@
+<html>
+	<head>
+	<style>
+	img
+		{
+		width:100px;
+		height:200px;
+		}
+		</style>
+	</head>
+	<body>
+		<button id="b1">click me</button>
+		
+	<img src="Chrysanthemum.jpg">
+		<br>
+		<img src="Hydrangeas.jpg">
+		<img src="Lighthouse.jpg">
+		<img src="Desert.jpg">
+		<img src="Koala.jpg">
+		<img src="Penguins.jpg">
+		<img src="Tulips.jpg">
+		<script type="text/javascript">
+			document.getElementById("b1").onclick=function(){
+		var arr=document.getElementsByTagName("img");
+		var l=arr.length;
+		l--;
+		var ran=Math.floor(Math.random()*l)+1;
+		arr[0].src=arr[ran].src;
+			};
+		</script>
+	</body>
+</html>

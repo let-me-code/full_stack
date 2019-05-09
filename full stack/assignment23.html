@@ -1,0 +1,40 @@
+<html>
+	<head>
+	
+		
+	
+	
+	</head>
+	<body>
+	<button id="b1">click me</button>
+		
+		
+		<p id="p1">
+		
+		I am first paragraph
+		
+		</p>
+		<p id="p2">
+		
+		I am second paragraph
+		
+		</p>
+		<p id="temp">
+		
+		
+		</p>
+		
+		<script type="application/javascript">
+		document.getElementById("b1").onclick=function()
+		{
+			document.getElementById("temp").innerText=document.getElementById("p1").innerText;
+			document.getElementById("p1").innerText=document.getElementById("p2").innerText;
+			document.getElementById("p2").innerText=document.getElementById("temp").innerText;
+			document.getElementById("temp").innerText=null;
+			
+		};
+		
+		</script>
+	
+	</body>
+</html>

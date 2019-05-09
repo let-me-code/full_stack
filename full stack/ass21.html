@@ -1,0 +1,35 @@
+<html>
+<head>
+    <style type="text/css">
+        #c1{
+     width: 100px;
+     height: 100px;
+     border-radius: 50%;
+     background-color: red;
+  }
+    </style>
+<script>
+    
+
+    function changeColor()
+    {
+        var c=document.getElementById("c1");
+        
+        var x=Math.round(Math.random() * 255);
+        var y=Math.round(Math.random() * 255);
+        var z=Math.round(Math.random() * 255);
+        var bg="background-color:rgb("+x+","+y+","+z+");";
+        
+            c.style=bg;
+        
+        
+    }
+    
+</script>
+    <body>
+    <canvas id="c1">
+       
+    </canvas>
+    <button onclick="changeColor();">colour change</button>
+    </body>
+</html

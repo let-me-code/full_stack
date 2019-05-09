@@ -1,0 +1,70 @@
+#body
+{
+	background-color: black;
+
+}
+.h1
+{
+	font-family: sans-serif;
+	color:white;
+	font-size: 40px;
+
+}
+.h3
+{
+	font-family: sans-serif;
+	color:white;
+	font-style: none;
+	font-size: 20px;
+
+	
+}
+.span
+{
+	font-family: sans-serif;
+	color:white;
+	position:absolute;
+	left:40px;
+	font-style: none;
+	font-size:30px;
+	width:40px;
+
+}
+#name
+{
+	position:absolute;
+	left:60px;
+	width:260px;
+}
+#name1
+{
+	position:absolute;
+	left:-20px;
+	width:260px;
+}
+.em
+{
+	position:absolute;
+	left:-125px;
+	
+}
+#em1
+{
+	position:absolute;
+	left:156px;
+	width:160px;
+}
+#em2
+{
+	position:absolute;
+	left:70px;
+	width:160px;
+	
+}
+#em3
+{
+	position:absolute;
+	left:0px;
+	width:160px;
+	
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+<body>
+	<script type="text/javascript" src="tudos.js">
+		var max=0;
+		userids=[0,0,0,0,0,0,0,0,0,0,0];
+		for (var i = 0; i < data.length; i++) {
+			if(data[i]['completed']==true){
+				userids[ data[i]['userId'] ] = userids[ data[i]['userId'] ] + 1;
+			}
+		}
+		var maxtaskid=1;
+		for (var i = 1; i < userids.length; i++) {
+			if (userids[i]>max) {
+				max=userids[i];
+				maxtaskid=i;
+			}
+			
+		}
+		console.log(maxtaskid + '---' + max);
+	</script>
+
+</body>
+</html>

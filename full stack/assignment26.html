@@ -1,0 +1,73 @@
+<html>
+<head>
+	<style>
+		#div1
+		{
+			height:100px;
+			width:100px;
+			
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+<div id="div1"></div>
+	<p id="para"></p>
+<script type="text/javascript">
+			
+			document.getElementById("div1").onclick=function(){
+				var d=new Date();
+			
+			var i;
+			var a = new Array(6);
+			var text="";
+			text=text+"#";
+			for (i = 0; i<6; i++) { 
+			a[i]=(Math.floor(Math.random()*15)+1);
+			if(a[i]==10)
+			{
+				text=text+"A";
+			}
+			else if(a[i]==11)
+			{
+				text=text+"B";
+			}
+			else if(a[i]==12)
+			{
+				text=text+"C";
+			}
+			else if(a[i]==13)
+			{
+				text=text+"D";
+			}
+			else if(a[i]==14)
+			{
+				text=text+"E";
+			}
+			else if(a[i]==15)
+			{
+				text=text+"F";
+			}
+			else
+			{
+				text=text+a[i];
+			}
+
+		}
+		h=Math.floor(Math.random()*100)+1;
+		w=Math.floor(Math.random()*200)+1;
+		x=Math.floor(Math.random()*500)+1;
+		y=Math.floor(Math.random()*300)+1;
+		document.getElementById("div1").style.backgroundColor=text;
+		document.getElementById("div1").style.height=h;
+		document.getElementById("div1").style.width=w;
+		document.getElementById("div1").style.position="absolute";
+		document.getElementById("div1").style.top=x;
+		document.getElementById("div1").style.left=y;
+				
+		
+
+}
+</script> 
+</body>
+</html>
